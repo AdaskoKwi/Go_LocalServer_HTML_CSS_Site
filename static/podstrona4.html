@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularzem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formularz o stronie internetowej</h1>
+    </header>
+    <div class="kontener">
+        <nav class="lewa-kolumna">
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="podstrona1.html">Claymore</a></li>
+                <li><a href="podstrona2.html">Wymagania systemowe</a></li>
+                <li><a href="podstrona3.html">Klasy postaci</a></li>
+                <li><a href="podstrona4.html">Formularz</a></li>
+                <li><a href="podstrona5.html">Galeria</a></li>
+            </ul>
+        </nav>
+        <main class="srodkowa-kolumna">
+            <h2>Czy moja strona internetowa Ci się spodobała?</h2>
+            <p>
+                Poniżej znajduje się formularz, w którym możesz ocenić stronę. Jeśli posiadasz jakieś uwagi lub pytania wpisz je w polu komentarz (maksymalnie 150 znaków) w formularzu.
+            </p>
+
+            <form action="/submit" method="post">
+                <label for="name">Imię:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+        
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                
+                <label for="">Ocena strony:</label><br>
+                <input type="radio" name="ocena">Słaba<br>
+                <input type="radio" name="ocena">Średnia<br>
+                <input type="radio" name="ocena">Dobra<br>
+                <input type="radio" name="ocena">Bardzo dobra<br><br>
+
+                <label for="message">Komentarz:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" maxlength="200"></textarea><br><br>
+        
+                <input type="button" value="Wyślij">
+            </form><br>
+
+            <a href="index.html">Wróć do strony głównej</a>
+        </main>
+        <aside class="prawa-kolumna">
+            <ul>
+                <li><a href="https://eldenring.wiki.fextralife.com/Elden+Ring+Wiki">Wiki Elden Ring</a></li>
+                <li><a href="https://store.steampowered.com/app/1245620/ELDEN_RING/">Strona Elden Ring w Steam</a></li>
+                <li><a href="https://store.steampowered.com/app/2778580/ELDEN_RING_Shadow_of_the_Erdtree/">Strona DLC do Elden Ring na Steam</a></li>
+            </ul>
+        </aside>
+    </div>
+    <footer>
+        <p>Kontakt: adamnowakhomm@gmail.com</p>
+    </footer>
+</body>
+</html>
